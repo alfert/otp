@@ -58,7 +58,7 @@
 
  <section>
     <title>DATA TYPES </title>
-    
+
     <p><code>key_value()  = integer() | binary() </code></p>
 
     <p><code>rsa_public()  = [key_value()] = [E, N]  </code></p>
@@ -91,7 +91,7 @@
     | {host,[Verifier::binary(), Prime::binary(), Version::atom() | [Scrambler::binary]]} </code></p>
 
     <p>Where Verifier is <c>v</c>, Generator is <c>g</c> and Prime is<c> N</c>, DerivedKey is <c>X</c>, and Scrambler is
-    <c>u</c> (optional will be genrated if not provided) from <url href="http://srp.stanford.edu/design.html">SRP design</url>
+    <c>u</c> (optional will be generated if not provided) from <url href="http://srp.stanford.edu/design.html">SRP design</url>
     Version = '3' |  '6' |  '6a'
     </p>
 
@@ -333,7 +333,7 @@
       </type>
       <desc>
         <p>Updates the HMAC represented by <c>Context</c> using the given <c>Data</c>. <c>Context</c>
-        must have been generated using an HMAC init function (such as 
+        must have been generated using an HMAC init function (such as
         <seealso marker="#hmac_init/2">hmac_init</seealso>). <c>Data</c> can be any length. <c>NewContext</c>
         must be passed into the next call to <c>hmac_update</c>
 	or to one of the functions <seealso marker="#hmac_final/1">hmac_final</seealso> and
