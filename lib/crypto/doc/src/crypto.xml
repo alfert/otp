@@ -188,12 +188,12 @@
     </func>
 
     <func>
-      <name>compute_key(Type, OthersPublicKey, MyPrivateKey, Params) -> SharedSecret</name>
+      <name>compute_key(Type, OthersPublicKey, MyPrivate, Params) -> SharedSecret</name>
       <fsummary>Computes the shared secret</fsummary>
       <type>
-	<v> Type = dh | ecdh | srp </v>
+	<v>Type = dh | ecdh | srp </v>
 	<v>OthersPublicKey =  dh_public() | ecdh_public() | srp_public() </v>
-	<v>MyPrivate =  dh_private() | ecdh_private() | srp_private()  </v>
+	<v>MyPrivate = dh_private() | ecdh_private() | {srp_public(), srp_private()} </v>
 	<v>Params = dh_params() | edhc_params() | srp_params() </v>
 	<v>SharedSecret = binary()</v>
       </type>
