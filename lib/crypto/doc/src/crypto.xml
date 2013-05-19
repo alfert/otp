@@ -79,11 +79,11 @@
 
     <p><code>dss_public() =  [key_value()] =[P, Q, G, Y] </code></p>
 
-    <p><code>srp_public() =  key_value() </code></p>
+    <p><code>srp_public() =  binary() </code></p>
     <p>Where is <c>A</c> or <c>B</c> from <url href="http://srp.stanford.edu/design.html">SRP design</url></p>
 
-    <p><code>srp_private() = key_value() </code></p>
-    <p>Where is  <c>a</c> or <c>b</c> from <url href="http://srp.stanford.edu/design.html">SRP design</url></p>
+    <p><code>srp_private() = binary() </code></p>
+    <p>Where is <c>a</c> or <c>b</c> from <url href="http://srp.stanford.edu/design.html">SRP design</url></p>
 
     <p><code>srp_params() = {user, [Generator::binary(), Prime::binary(), Version::atom()]} |
     {host, [Verifier::binary(), Generator::binary(), Prime::binary(), Version::atom()]}
